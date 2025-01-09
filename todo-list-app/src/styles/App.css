@@ -1,98 +1,133 @@
 /* Reset default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Header styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.loginButton {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.ctaButton {
+  padding: 12px 30px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1rem;
+  min-width: 180px;
+  text-align: center;
+}
+
+/* Main layout adjustments for spacing */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  margin-top: 80px; /* Offset for the fixed header */
+}
+
+#todo-list {
+  margin-top: 30px; /* Adds space between the header and form */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TodoForm specific styles */
+form {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px; /* Optional: makes the form not stretch too wide */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    flex-wrap: wrap;
+    padding: 20px 10%;
+    justify-content: center;
   }
-  
+
   .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.25rem;
   }
-  
+
   .nav {
-    display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .navLink {
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  
+
   .auth-buttons {
-    display: flex;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .loginButton {
-    padding: 10px 20px;
-    border: 1px solid #333;
-    background-color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
+
+  .loginButton, .ctaButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
-  
+
   .ctaButton {
-    padding: 12px 30px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    white-space: nowrap;
-    font-size: 1rem;
-    min-width: 180px;
-    text-align: center;
+    min-width: 120px;
   }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    .header {
-      padding: 20px 10%;
-      justify-content: center;
-    }
-  
-    .logo {
-      font-size: 1.25rem;
-    }
-  
-    .nav {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navLink {
-      font-size: 0.9rem;
-    }
-  
-    .auth-buttons {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .loginButton, .ctaButton {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-    }
-  
-    .ctaButton {
-      min-width: 120px;
-    }
+
+  /* Make sure TodoForm and List are responsive */
+  #todo-list {
+    margin-top: 40px;
   }
-  
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+}

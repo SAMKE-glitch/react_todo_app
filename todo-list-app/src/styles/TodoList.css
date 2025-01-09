@@ -1,0 +1,36 @@
+/* TodoList.css */
+#todo-list {
+    width: 500px;
+    margin: 60px auto;
+  }
+  
+  .todo {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(15, 26, 61);
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-size: 16px;
+    background-color: rgb(62, 138, 151);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(173, 47, 28);
+  }
+  
+  button:active {
+    background-color: rgb(130, 35, 21);
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  

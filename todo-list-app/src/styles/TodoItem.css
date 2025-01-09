@@ -1,0 +1,50 @@
+/* TodoItem.css */
+.todo {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(15, 26, 61);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.todo-text {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 1cm;
+  display: flex;
+  align-self: center;
+}
+
+.todo input[type="checkbox"] {
+  transform: scale(1.8) translateY(1px);
+  margin: 0 16px 0 0;
+  cursor: pointer;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 16px;
+  background-color: rgb(62, 138, 151);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(173, 47, 28);
+}
+
+button:active {
+  background-color: rgb(130, 35, 21);
+}
+
+button:focus {
+  outline: 0;
+}
