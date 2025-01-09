@@ -1,0 +1,90 @@
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.loginButton {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.ctaButton {
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 1rem;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 10%;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navLink {
+        font-size: 0.9rem;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loginButton, .ctaButton {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .ctaButton {
+        min-width: 120px;
+    }
+}
