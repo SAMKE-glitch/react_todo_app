@@ -1,36 +1,38 @@
 /* TodoForm.css */
+
 form {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-form input {
-  padding: 4px 8px;
-  flex-grow: 1;
-  margin-right: 16px;
-  font-size: 20px;
-  font-family: monospace;
-}
-
-form button {
-  font-size: 16px;
-  background-color: rgb(62, 138, 151);
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: rgb(173, 47, 28);
-}
-
-form button:active {
-  background-color: rgb(130, 35, 21);
-}
-
-form button:focus {
-  outline: 0;
-}
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  form input {
+    padding: 4px 8px;
+    flex-grow: 1;
+    margin-right: 16px;
+    font-size: 20px;
+    font-family: monospace;
+  }
+  
+  .add-btn {
+    font-size: 16px;
+    background-color: rgb(62, 138, 151); /* Blue-green for add */
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background-color: rgb(30, 100, 120); /* Darker blue-green for hover */
+  }
+  
+  .add-btn:active {
+    background-color: rgb(15, 70, 90); /* Even darker for active */
+  }
+  
+  .add-btn:focus {
+    outline: none;
+  }
+  

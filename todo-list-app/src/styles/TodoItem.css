@@ -27,24 +27,25 @@
   margin-top: 10px;
 }
 
-button {
-  font-size: 16px;
-  background-color: rgb(62, 138, 151);
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgb(173, 47, 28);
-}
-
-button:active {
-  background-color: rgb(130, 35, 21);
-}
-
-button:focus {
-  outline: 0;
-}
+.delete-btn {
+    font-size: 14px;
+    background-color: rgb(255, 99, 71); /* Tomato red for delete */
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: rgb(220, 20, 60); /* Crimson red for hover */
+  }
+  
+  .delete-btn:active {
+    background-color: rgb(139, 0, 0); /* Dark red for active state */
+  }
+  
+  .delete-btn:focus {
+    outline: none;
+  }
+  
