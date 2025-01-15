@@ -2,11 +2,11 @@ import React from "react";
 import TodoItem from "./TodoItem";
 import '../styles/TodoList.css';
 
-const TodoList = ({ todos, deleteTodo }) => {
+const TodoList = ({ todos, deleteTodo, toggleComplete }) => {
   return (
     <div className="todo-list">
       {todos.map((todo) => (
-       <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo} />
+       <TodoItem key={todo.id} todo={todo} deleteTodo={deleteTodo} toggleComplete={toggleComplete} />
       ))}
     </div>
   );
