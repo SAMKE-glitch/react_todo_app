@@ -21,21 +21,21 @@
   .todo-text {
     font-size: 24px;
     line-height: 24px;
-    margin-bottom: 1cm;
-    display: flex;
-    justify-content: space-between; /* This makes sure text and checkbox are on opposite ends */
-    align-items: center;
+    display: flex; /* Flex container for aligning text and checkbox */
+    justify-content: space-between; /* Distribute checkbox and text */
+    align-items: center; /* Vertically align checkbox and text */
+    margin-bottom: 10px; /* Space between text and delete button */
   }
   
   /* Checkbox styling */
   .todo-text input[type="checkbox"] {
-    margin-right: 12px; /* Space between checkbox and text */
+    margin-left: 12px; /* Space between checkbox and text */
     transform: scale(2.0); /* Larger checkbox */
     cursor: pointer; /* Pointer cursor on hover */
     accent-color: rgb(34, 139, 34); /* Green for checkbox (modern browsers only) */
   }
   
-  /* Text styling with spacing */
+  /* Text styling */
   .todo-text p {
     margin: 0; /* Ensure no margin for the text */
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth toggle */
