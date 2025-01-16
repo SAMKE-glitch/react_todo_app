@@ -41,11 +41,12 @@
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth toggle */
   }
   
-  /* Completed todo styling */
-  .todo-text input[type="checkbox"]:checked + p {
-    text-decoration: line-through; /* Strikethrough for completed tasks */
-    color: gray; /* Dimmed color */
+/* Completed todo styling */
+.completed {
+    text-decoration: line-through; /* Adds the strikethrough effect */
+    color: gray; /* Dimmed color for completed tasks */
   }
+  
   
   /* Action buttons container */
   .todo-actions {

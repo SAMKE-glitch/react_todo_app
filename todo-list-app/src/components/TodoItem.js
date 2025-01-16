@@ -5,7 +5,8 @@ const TodoItem = ({ todo, deleteTodo, toggleComplete }) => {
   return (
     <div className="todo">
       <div className="todo-text">
-        <p>{todo.text}</p>
+        {/* Add a dynamic class for strikethrough */}
+        <p className={todo.completed ? "completed" : ""}>{todo.text}</p>
         {/* Add checkbox for toggle complete */}
         <input
           type="checkbox"
