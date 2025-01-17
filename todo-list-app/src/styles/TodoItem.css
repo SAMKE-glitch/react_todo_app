@@ -41,18 +41,49 @@
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth toggle */
   }
   
-/* Completed todo styling */
-.completed {
+  /* Completed todo styling */
+  .completed {
     text-decoration: line-through; /* Adds the strikethrough effect */
     color: gray; /* Dimmed color for completed tasks */
   }
-  
   
   /* Action buttons container */
   .todo-actions {
     display: flex; /* Align buttons horizontally */
     justify-content: space-between; /* Spread buttons apart */
     margin-top: 10px; /* Space above the actions */
+  }
+  
+  /* Edit/Submit Edit button styling */
+  .todo-actions button {
+    font-size: 14px; /* Button font size */
+    border-radius: 4px; /* Rounded corners */
+    border: none; /* No border */
+    padding: 6px 12px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Default 'Edit' button styling */
+  .todo-actions button.edit-btn {
+    background-color: blue; /* Blue color for Edit */
+    color: white;
+  }
+  
+  /* 'Edit' button hover state */
+  .todo-actions button.edit-btn:hover {
+    background-color: rgb(0, 123, 255); /* Darker blue on hover */
+  }
+  
+  /* 'Submit Edits' button styling */
+  .todo-actions button.submit-btn {
+    background-color: orange; /* Orange color for Submit Edits */
+    color: white;
+  }
+  
+  /* 'Submit Edits' button hover state */
+  .todo-actions button.submit-btn:hover {
+    background-color: red; /* Red color on hover */
   }
   
   /* Delete button styling */
@@ -81,4 +112,12 @@
   .delete-btn:focus {
     outline: none;
   }
-  
+  .edit-input {
+    width: 100%; /* Make the input fill the container's width */
+    padding: 20px; /* Add some padding for a better user experience */
+    font-size: 22px; /* Increase font size for better readability */
+    border-radius: 4px; /* Rounded corners for the input */
+    border: 1px solid #ccc; /* Light border color */
+    margin-right: 10px; /* Space for the checkbox on the right */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
