@@ -5,8 +5,8 @@ import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 
 const App = () => {
-  const [todos, setTodos] = useState([]);
-  const [todoEditing, setTodoEditing] = useState(null); // State for editing
+  const [todos, setTodos] = useState([]); // Initializes an empty array for the To-Do list.
+  const [todoEditing, setTodoEditing] = useState(null); // State for editing Initializes null to indicate no todo is being edited.
   
   
   // Load todos from localStorage when the app starts
