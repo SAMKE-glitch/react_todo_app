@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState,useEffect} from "react";
 import './styles/App.css';
 import Header from './components/Header';
 import TodoForm from './components/TodoForm';
@@ -7,6 +7,25 @@ import TodoList from './components/TodoList';
 const App = () => {
   const [todos, setTodos] = useState([]);
   const [todoEditing, setTodoEditing] = useState(null); // State for editing
+  
+  
+  // Load todos from localStorage when the app starts
+  useEffect(() => {
+    const json = localStorage.getItem("todos");
+    const loadedTodos = JSON.parse(json);
+    if (loadedTodos) {
+      setTodos(loadedTodos);
+    }
+  }, []); // Empty dependency array ensures this runs only once (on mount)
+
+
+  // Save todos to localStorage whenever the todos array changes
+  useEffect(() => {
+    if (todos.length > 0) {
+      const json = JSON.stringify(todos);
+      localStorage.setItem("todos", json);
+    }
+  }, [todos]); // This effect runs whenever the todos state changes
 
   // add Todo logic
   const addTodo = (newTodo) => {
