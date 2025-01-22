@@ -45,3 +45,34 @@ npm install
 npm start
 ```
 This will start the app on http://localhost:3000. Open this URL in your browser.
+
+## **Functionality**
+- **Add a Todo:** You can add a new task to the list.
+- **Edit a Todo:** Clicking "Edit" allows you to update a task.
+- **Delete a Todo:** Clicking "Delete" removes a task from the list.
+- **Mark as Complete:** Toggle the checkbox to mark a task as complete or incomplete.
+
+### **How It Works**
+### **LocalStorage Integration**
+- **Retrieving Tasks:** Upon the app's initial load, the tasks are retrieved from **localStorage** (if any).
+```bash
+useEffect(() => {
+  const json = localStorage.getItem("todos");
+  const loadedTodos = JSON.parse(json);
+  if (loadedTodos) {
+    setTodos(loadedTodos);
+  }
+}, []);
+
+```
+- **Saving Tasks:** Whenever the list of tasks is updated (like adding or deleting tasks), the ```useEffect``` hook ensures that the new list is saved to **localStorage.**
+```bash
+useEffect(() => {
+  if (todos.length > 0) {
+    const json = JSON.stringify(todos);
+    localStorage.setItem("todos", json);
+  }
+}, [todos]);
+
+```
+This allows the app to persist tasks even after the page is reloaded.
