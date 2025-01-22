@@ -22,3 +22,18 @@ This is a React-based To-Do List application where users can add, edit, delete, 
     - **useState:** For managing state in functional components.
     - **useEffect:** For handling side effects, such as saving and retrieving tasks from localStorage.
 - **CSS:** For styling the application.
+
+## **Getting Started**
+### **Prerequisites**
+- **Node.js** and **npm (Node package manager)** installed on your system.
+
+## **Installation**
+### 1. Clone the repository:
+```bash
+git clone https://github.com/SAMKE-glitch/react_todo_app.git
+cd react_todo_app/todo-list-app
+```
+### 2. Navigate into the project directory:
+```bash
+cd react_todo_app/todo-list-app
+```
