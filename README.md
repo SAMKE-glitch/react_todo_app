@@ -112,7 +112,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## **Acknowledgments**
 - **React:** - [React Documentation](https://reactjs.org/docs/getting-started.html) for providing excellent guidance on React hooks and components.
-- **localStorage:** - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) for detailed information on localStorage.
+- **localStorage:** - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) for detailed information on `localStorage.
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
