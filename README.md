@@ -9,6 +9,7 @@ This is a React-based To-Do List application where users can add, edit, delete, 
 * [Project Structure](#project-structure)
 * [License](#license)
 * [Acknowledgment](#acknowledgment)
+* [Contributing](#contributing)
 
 ## **Features**
 - **React Components:** The app is built using React functional components.
@@ -53,6 +54,8 @@ This will start the app on http://localhost:3000. Open this URL in your browser.
 - **Mark as Complete:** Toggle the checkbox to mark a task as complete or incomplete.
 
 ### **How It Works**
+### Adding a Todo
+When a user submits the form in `TodoForm.js`, the `addTodo` function is called. This function creates a new task object and updates the `todos` state using the `setTodos` function from the `useState` hook.
 ### **LocalStorage Integration:**
 - **Retrieving Tasks:** Upon the app's initial load, the tasks are retrieved from **localStorage** (if any).
 ```bash
@@ -109,3 +112,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## **Acknowledgments**
 - **React:** For making UI development more manageable and efficient.
 - **localStorage:** For allowing persistence of tasks in the browser without needing a backend.
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeatureName`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeatureName`).
+5. Open a pull request.
