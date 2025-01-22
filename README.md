@@ -101,3 +101,11 @@ react_todo_app/
 │       └── TodoList.css     # Styles for TodoList.js
 ├── package.json             # Project dependencies and scripts
 └── README.md                # Project documentation
+```
+
+## **License**
+This project is licensed under the MIT License. See the [License](license) file for details.
+
+## **Acknowledgments**
+- **React:** For making UI development more manageable and efficient.
+- **localStorage:** For allowing persistence of tasks in the browser without needing a backend.
