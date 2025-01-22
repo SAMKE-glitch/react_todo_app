@@ -76,3 +76,27 @@ useEffect(() => {
 
 ```
 This allows the app to persist tasks even after the page is reloaded.
+
+## **Project Structure**
+react_todo_app/
+├── public/                  # Static assets
+│   ├── index.html           # Main HTML file
+│   ├── manifest.json        # PWA manifest
+│   └── robots.txt           # Robots exclusion file
+├── src/                     # Source code
+│   ├── App.js               # Main application component
+│   ├── index.js             # Entry point for the app
+│   ├── index.css            # Global styles
+│   ├── components/          # Reusable components
+│   │   ├── Header.js        # Header component
+│   │   ├── TodoForm.js      # Form for adding todos
+│   │   ├── TodoItem.js      # Individual todo item
+│   │   └── TodoList.js      # List of todos
+│   └── styles/              # Component-specific styles
+│       ├── App.css          # Styles for App.js
+│       ├── Header.css       # Styles for Header.js
+│       ├── TodoForm.css     # Styles for TodoForm.js
+│       ├── TodoItem.css     # Styles for TodoItem.js
+│       └── TodoList.css     # Styles for TodoList.js
+├── package.json             # Project dependencies and scripts
+└── README.md                # Project documentation
