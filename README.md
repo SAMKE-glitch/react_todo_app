@@ -31,9 +31,17 @@ This is a React-based To-Do List application where users can add, edit, delete, 
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/SAMKE-glitch/react_todo_app.git
-cd react_todo_app/todo-list-app
 ```
 ### 2. Navigate into the project directory:
 ```bash
 cd react_todo_app/todo-list-app
 ```
+### 3. Install dependencies:
+```bash
+npm install
+```
+### 4. Start the development server:
+```bash
+npm start
+```
+This will start the app on http://localhost:3000. Open this URL in your browser.
