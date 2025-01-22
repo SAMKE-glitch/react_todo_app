@@ -1,5 +1,5 @@
 # **To-Do List Application (Frontend Only)**
-This is a React-based To-Do List application where users can add, edit, delete, and mark tasks as completed. The application uses localStorage to persist tasks on the user's browser even after the page reloads.
+This is a React-based To-Do List application where users can add, edit, delete, and mark tasks as completed. The application uses `localStorage` to persist tasks on the user's browser even after the page reloads.
 ## Table of Contents
 * [Features](#features)
 * [Technologies Used](#technologies-used)
@@ -10,6 +10,7 @@ This is a React-based To-Do List application where users can add, edit, delete, 
 * [License](#license)
 * [Acknowledgment](#acknowledgment)
 * [Contributing](#contributing)
+* [Future Improvements](#future-improvemets)
 
 ## **Features**
 - **React Components:** The app is built using React functional components.
@@ -110,8 +111,8 @@ react_todo_app/
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## **Acknowledgments**
-- **React:** For making UI development more manageable and efficient.
-- **localStorage:** For allowing persistence of tasks in the browser without needing a backend.
+- **React:** - [React Documentation](https://reactjs.org/docs/getting-started.html) for providing excellent guidance on React hooks and components.
+- **localStorage:** - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) for detailed information on localStorage.
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
@@ -120,3 +121,9 @@ Contributions are welcome! Please follow these steps:
 3. Commit your changes (`git commit -m 'Add some feature'`).
 4. Push to the branch (`git push origin feature/YourFeatureName`).
 5. Open a pull request.
+
+
+## Future Improvements
+- Add user authentication to allow multiple users to manage their own tasks.
+- Implement a backend to store tasks in a database instead of localStorage.
+- Add drag-and-drop functionality to reorder tasks.
