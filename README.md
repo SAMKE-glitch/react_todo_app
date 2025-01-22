@@ -53,7 +53,7 @@ This will start the app on http://localhost:3000. Open this URL in your browser.
 - **Mark as Complete:** Toggle the checkbox to mark a task as complete or incomplete.
 
 ### **How It Works**
-### **LocalStorage Integration**
+### **LocalStorage Integration:**
 - **Retrieving Tasks:** Upon the app's initial load, the tasks are retrieved from **localStorage** (if any).
 ```bash
 useEffect(() => {
@@ -104,7 +104,7 @@ react_todo_app/
 ```
 
 ## **License**
-This project is licensed under the MIT License. See the [License](license) file for details.
+This project is licensed under the MIT License. See the [LICENSE](license) file for details.
 
 ## **Acknowledgments**
 - **React:** For making UI development more manageable and efficient.
