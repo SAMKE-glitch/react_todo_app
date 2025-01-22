@@ -9,3 +9,9 @@ This is a React-based To-Do List application where users can add, edit, delete, 
 * [Project Structure](#project-structure)
 * [License](#license)
 * [Acknowledgment](#acknowledgment)
+
+## **Features**
+- ***React Components:*** The app is built using React functional components.
+- ***State Management:*** useState hook is used for managing the state of tasks and editing state.
+- ***Side Effects:*** useEffect hook is used to retrieve tasks from localStorage and save tasks to localStorage whenever tasks are updated.
+- ***Persistent Storage:*** Tasks are saved in localStorage, allowing data to persist even after refreshing the page.
