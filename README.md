@@ -78,6 +78,7 @@ useEffect(() => {
 This allows the app to persist tasks even after the page is reloaded.
 
 ## **Project Structure**
+```bash
 react_todo_app/
 ├── public/                  # Static assets
 │   ├── index.html           # Main HTML file
