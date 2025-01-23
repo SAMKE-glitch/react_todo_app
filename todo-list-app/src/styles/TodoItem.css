@@ -8,86 +8,88 @@
     padding: 10px 20px; /* Space inside the item */
     margin-bottom: 10px; /* Space between items */
     border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background */
+    background-color: #f0f0f0; /* Slightly darker background for contrast */
     transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Hover effect for todo items */
-  .todo:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Hover effect for todo items */
+.todo:hover {
     background-color: #eef2ff; /* Slightly darker background on hover */
-  }
-  
-  /* Styling the text and checkbox container */
-  .todo-text {
+}
+
+/* Styling the text and checkbox container */
+.todo-text {
     font-size: 24px;
     line-height: 24px;
     display: flex; /* Flex container for aligning text and checkbox */
     justify-content: space-between; /* Distribute checkbox and text */
     align-items: center; /* Vertically align checkbox and text */
     margin-bottom: 10px; /* Space between text and delete button */
-  }
-  
-  /* Checkbox styling */
-  .todo-text input[type="checkbox"] {
+}
+
+/* Checkbox styling */
+.todo-text input[type="checkbox"] {
     margin-left: 12px; /* Space between checkbox and text */
     transform: scale(2.0); /* Larger checkbox */
     cursor: pointer; /* Pointer cursor on hover */
     accent-color: rgb(34, 139, 34); /* Green for checkbox (modern browsers only) */
-  }
-  
-  /* Text styling */
-  .todo-text p {
+}
+
+/* Text styling */
+.todo-text p, .todo-text div {
     margin: 0; /* Ensure no margin for the text */
+    color: #000; /* Set a dark color for visibility */
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth toggle */
-  }
-  
-  /* Completed todo styling */
-  .completed {
+}
+
+/* Completed todo styling */
+.completed {
     text-decoration: line-through; /* Adds the strikethrough effect */
     color: gray; /* Dimmed color for completed tasks */
-  }
-  
-  /* Action buttons container */
-  .todo-actions {
+}
+
+/* Action buttons container */
+.todo-actions {
     display: flex; /* Align buttons horizontally */
     justify-content: space-between; /* Spread buttons apart */
     margin-top: 10px; /* Space above the actions */
-  }
-  
-  /* Edit/Submit Edit button styling */
-  .todo-actions button {
+}
+
+/* Edit/Submit Edit button styling */
+.todo-actions button {
     font-size: 14px; /* Button font size */
     border-radius: 4px; /* Rounded corners */
     border: none; /* No border */
     padding: 6px 12px; /* Padding inside the button */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Default 'Edit' button styling */
-  .todo-actions button.edit-btn {
+}
+
+/* Default 'Edit' button styling */
+.todo-actions button.edit-btn {
     background-color: blue; /* Blue color for Edit */
     color: white;
-  }
-  
-  /* 'Edit' button hover state */
-  .todo-actions button.edit-btn:hover {
+}
+
+/* 'Edit' button hover state */
+.todo-actions button.edit-btn:hover {
     background-color: rgb(0, 123, 255); /* Darker blue on hover */
-  }
-  
-  /* 'Submit Edits' button styling */
-  .todo-actions button.submit-btn {
+}
+
+/* 'Submit Edits' button styling */
+.todo-actions button.submit-btn {
     background-color: orange; /* Orange color for Submit Edits */
     color: white;
-  }
-  
-  /* 'Submit Edits' button hover state */
-  .todo-actions button.submit-btn:hover {
+}
+
+/* 'Submit Edits' button hover state */
+.todo-actions button.submit-btn:hover {
     background-color: red; /* Red color on hover */
-  }
-  
-  /* Delete button styling */
-  .delete-btn {
+}
+
+/* Delete button styling */
+.delete-btn {
     font-size: 14px; /* Button font size */
     background-color: rgb(255, 99, 71); /* Tomato red */
     color: #fff; /* White text */
@@ -96,23 +98,24 @@
     padding: 6px 12px; /* Padding inside the button */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s ease; /* Smooth hover effect */
-  }
-  
-  /* Delete button hover state */
-  .delete-btn:hover {
+}
+
+/* Delete button hover state */
+.delete-btn:hover {
     background-color: rgb(220, 20, 60); /* Crimson red */
-  }
-  
-  /* Delete button active state */
-  .delete-btn:active {
+}
+
+/* Delete button active state */
+.delete-btn:active {
     background-color: rgb(139, 0, 0); /* Dark red */
-  }
-  
-  /* Remove focus outline */
-  .delete-btn:focus {
+}
+
+/* Remove focus outline */
+.delete-btn:focus {
     outline: none;
-  }
-  .edit-input {
+}
+
+.edit-input {
     width: 100%; /* Make the input fill the container's width */
     padding: 20px; /* Add some padding for a better user experience */
     font-size: 22px; /* Increase font size for better readability */
@@ -120,4 +123,4 @@
     border: 1px solid #ccc; /* Light border color */
     margin-right: 10px; /* Space for the checkbox on the right */
     box-sizing: border-box; /* Ensure padding is included in the width */
-  }
+}
