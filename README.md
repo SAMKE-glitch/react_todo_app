@@ -7,7 +7,7 @@ This is a React-based To-Do List application where users can add, edit, delete, 
 * [Functionality](#functionality)
 * [How it Works](#how-it-works)
 * [Project Structure](#project-structure)
-- [Screenshot](#screenshot)
+ [Screenshot](#screenshot)
 * [Acknowledgment](#acknowledgment)
 * [Contributing](#contributing)
 * [Future Improvements](#future-improvemets)
