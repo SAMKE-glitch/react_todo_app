@@ -7,10 +7,11 @@ This is a React-based To-Do List application where users can add, edit, delete, 
 * [Functionality](#functionality)
 * [How it Works](#how-it-works)
 * [Project Structure](#project-structure)
-* [License](#license)
+- [Screenshot](#screenshot)
 * [Acknowledgment](#acknowledgment)
 * [Contributing](#contributing)
 * [Future Improvements](#future-improvemets)
+* [License](#license)
 
 ## **Features**
 - **React Components:** The app is built using React functional components.
@@ -81,6 +82,13 @@ useEffect(() => {
 ```
 This allows the app to persist tasks even after the page is reloaded.
 
+---
+
+## **Screenshot**
+![To-Do List App Screenshot](/examplescrn.png)
+
+---
+
 ## **Project Structure**
 ```bash
 react_todo_app/
@@ -107,9 +115,6 @@ react_todo_app/
 └── README.md                # Project documentation
 ```
 
-## **License**
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## **Acknowledgments**
 - **React:** - [React Documentation](https://reactjs.org/docs/getting-started.html) for providing excellent guidance on React hooks and components.
 - **localStorage:** - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) for detailed information on `localStorage.
@@ -127,3 +132,6 @@ Contributions are welcome! Please follow these steps:
 - Add user authentication to allow multiple users to manage their own tasks.
 - Implement a backend to store tasks in a database instead of localStorage.
 - Add drag-and-drop functionality to reorder tasks.
+
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
